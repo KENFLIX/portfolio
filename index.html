@@ -33,6 +33,7 @@
           margin-top: 0%;
       
         }
+        
     
         .top-nav {
           margin-top: 0%;
@@ -47,6 +48,18 @@
           background-color: grey;
           
           
+        }
+
+        .container::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: white;
+          animation: ShowRight 1s ease forwards;
+          animation-delay: 1s;
         }
     
     
@@ -81,6 +94,11 @@
             from {color: #B71375;}
             to {color: #3b080b;}
         }
+        @keyframes ShowRight{
+          100% {
+            width: 0;
+          }
+        }
       .btn {
         background-color: whitesmoke;
     
@@ -110,7 +128,7 @@
           <div class ="top-nav">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class=" bg-dange nav-link active" style="color: red" aria-current="page" href="#Home">Home</a>
+              <a class=" bg-danger nav-link active" style="color: white" aria-current="page" href="#Home">Home</a>
             </li>
             <li class="nav-item text-white">
               <a class="nav-link text-danger" href="#About">About</a>
@@ -159,7 +177,7 @@
      <div class="container">
       <div id="About bg-black" >
       <div class="text-bg-dark px-5 py-3 mt-4 " id="custom-cards">
-        <h1 class="pt-2 display-3 mt-2 mx-4 border-bottom border-info align-content-center text-bg-dark">Skill Set</h1></div>
+        <h1 class="pt-2 display-3 mt-2 mx-4 border-bottom border-info justify-content-center text-bg-dark text-danger">Skill Set</h1></div>
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-1">
           <div class="col">
@@ -239,29 +257,29 @@
       <h1 class="visually-hidden">Projects</h1>
     
       <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom display-3">About</h2>
+        <h2 class="pb-2 border-bottom display-3 justify-content-center text-danger">About</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-          <div class="feature col text-danger">
+          <div class="feature col text-dark">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center  text-bg-primary bg-gradient fs-2 mb-3">
               <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
             </div>
-            <h3 class="fs-2 text-body-emphasis-red"></h3>
+            <h3 class="fs-2 text-body-emphasis-dark"></h3>
             <h3>My name is Kenzy Chege.A web developer and a graphic designer.</h3>
         
           </div>
-          <div class="feature col text-danger">
+          <div class="feature col text-dark">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-danger fs-2 mb-3 text-white">
               <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
             </div>
-            <h3 class="fs-2 text-body-emphasis-red"></h3>
+            <h3 class="fs-2 text-body-emphasis-dark"></h3>
             <h3>I have a very deep understanding of computers and coding.I have spend most of my time making sure that i have everything you need for a good websites</h3>
           
           </div>
-          <div class="feature col text-danger">
+          <div class="feature col text-dark">
             <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3 ">
               <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
             </div>
-            <h3 class="fs-2 text-body-emphasis-red"></h3>
+            <h3 class="fs-2 text-dark"></h3>
           <h3>My commitment and descipline sets a good foundation that increases my confidence and competence.</h3>
             
           </div>
